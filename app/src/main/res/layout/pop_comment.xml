@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:id="@+id/edt_Cmt"
+        android:textStyle="normal"
+        android:singleLine="false"
+        android:hint="Write your Comment"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:id="@+id/DataImage"
+        android:layout_below="@id/edt_Cmt"
+        android:text="Add File"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dataresult"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textSize="13dp"
+    android:text="No Data Uploaded!"
+    android:textColor="#000"
+    android:layout_alignBottom="@+id/DataImage"
+    android:layout_toRightOf="@+id/DataImage"
+    android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cmt_submit"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/DataImage"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

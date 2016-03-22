@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Question"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:id="@+id/rep_ques"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answerer"
+            android:textSize="13dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rep_answerer"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:id="@+id/rep_answer"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/imgdata"
+        android:layout_centerHorizontal="true"
+        android:onClick="showdata"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imgdata"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_simple_border"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            style="?android:buttonBarButtonStyle"
+            android:textColor="#000000"
+            android:id="@+id/rep_allow"
+            android:text="Allow"
+            android:onClick="rep_allowHandler"
+            />
+
+        <Button
+            android:background="@drawable/button_simple_border"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            style="?android:buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_discard"
+            android:textColor="#000000"
+            android:text="Discard"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="rep_discardHandler"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_auid"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_aid"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

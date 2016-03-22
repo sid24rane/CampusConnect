@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:onClick="viewprofilehandler"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siddhesh Rane"
+        android:padding="12dp"
+        android:layout_weight="0.7"
+        android:id="@+id/member" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff"
+        android:layout_gravity="right"
+        android:textColor="#FF0000"
+        android:padding="12dp"
+        android:id="@+id/membertype" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siddhesh Rane"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:id="@+id/uid"
+        android:visibility="gone"
+        />
+</LinearLayout>

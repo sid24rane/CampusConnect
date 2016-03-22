@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">CampusConnect</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Password Again</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_email">Enter your Email Address</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_wrong_code">enter valid code</string>
+    <string name="error_mismatched_passwords">enter the same password twice</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_email_reverify">EmailReverify</string>
+    <string name="title_activity_universal">Universal</string>
+    <string name="title_resend">Your Account is not verified. Our app functions only for verified accounts. Please complete the process. </string>
+    <string name="title_developers">Developers, \n Team Campus Connect </string>
+    <string name="title_activity_sign_up_admin">SignUpAdmin</string>
+    <string name="title_activity_home_nav_bar">HomeNavBar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string-array name="dept_array">
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Information Technology</item>
+        <item>Instrumentation Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Rubber N Leather Technology</item>
+    </string-array>
+
+    <string name="dept_prompt">Choose a Department</string>
+    <string name="gender_prompt">Choose Gender</string>
+    <string name="category_prompt">Choose Category</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Unspecified</item>
+    </string-array>
+
+
+    <string-array name="qsextra">
+        <item>View Answer</item>
+        <item>Discuss</item>
+        <item>Ask Staff</item>
+        <item>Edit Question</item>
+        <item>Report Question</item>
+    </string-array>
+
+    <string-array name="Categories_array">
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Information Technology</item>
+        <item>Instrumentation Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Rubber N Leather Technology</item>
+        <item>Attendance</item>
+        <item>ATKT</item>
+        <item>Books</item>
+        <item>Canteen</item>
+        <item>Chemistry</item>
+        <item>College Issues</item>
+        <item>Department Issues</item>
+        <item>Detention</item>
+        <item>Exams</item>
+        <item>Exam cells</item>
+        <item>Exam Forms</item>
+        <item>Fests</item>
+        <item>Food</item>
+        <item>General</item>
+        <item>HOD</item>
+        <item>Industrial Visit</item>
+        <item>Mathematics</item>
+        <item>News</item>
+        <item>Office</item>
+        <item>Politics</item>
+        <item>Physics</item>
+        <item>Placements</item>
+        <item>Programming</item>
+        <item>Sports</item>
+        <item>Staff</item>
+        <item>Students</item>
+        <item>Technology</item>
+        <item>Teacher/Professors</item>
+        <item>Teaching</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="display_cat">
+        <item>All</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Electronics Engineering</item>
+        <item>Information Technology</item>
+        <item>Instrumentation Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Rubber N Leather Technology</item>
+        <item>Attendance</item>
+        <item>ATKT</item>
+        <item>Books</item>
+        <item>Canteen</item>
+        <item>Chemistry</item>
+        <item>College Issues</item>
+        <item>Department Issues</item>
+        <item>Detention</item>
+        <item>Exams</item>
+        <item>Exam cells</item>
+        <item>Exam Forms</item>
+        <item>Fests</item>
+        <item>Food</item>
+        <item>General</item>
+        <item>HOD</item>
+        <item>Industrial Visit</item>
+        <item>Mathematics</item>
+        <item>News</item>
+        <item>Office</item>
+        <item>Politics</item>
+        <item>Physics</item>
+        <item>Placements</item>
+        <item>Programming</item>
+        <item>Sports</item>
+        <item>Staff</item>
+        <item>Students</item>
+        <item>Technology</item>
+        <item>Teacher/Professors</item>
+        <item>Teaching</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="title_activity_proceed">Proceed</string>
+    <string name="title_activity_student_verify">Student Verification</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string name="title_activity_add_question">Add Question</string>
+    <string name="title_activity_view_question">Questions</string>
+    <string name="title_activity_question_detail">Question Details</string>
+    <string name="title_activity_view_upvotes">View Upvotes</string>
+    <string name="title_activity_reported_question">Reported Questions</string>
+    <string name="title_activity_edit_qs">Edit Question</string>
+    <string name="title_activity_create_discussion">Start a Discussion</string>
+    <string name="title_activity_add_discussion_member">Add Discussion Members</string>
+    <string name="title_activity_view_discussion_room">Discussion Rooms</string>
+    <string name="title_activity_discussion_detail">Discussion Details</string>
+
+    <string-array name="options">
+        <item>View Upvotes</item>
+        <item>Show Attched File</item>
+        <item>Show Comments</item>
+        <item>Report</item>
+        <item>Edit Answer</item>
+    </string-array>
+
+    <string-array name="detail_option">
+        <item>Discuss</item>
+        <item>View Answers</item>
+        <item>Ask Staff</item>
+        <item>Edit Question</item>
+        <item>Report</item>
+    </string-array>
+
+    <string-array name="users" />
+    <string name="title_activity_write_answer">WriteAnswer</string>
+    <string name="title_activity_discussion_message">DiscussionMessage</string>
+
+    <string-array name="ans_type">
+        <item>Popular</item>
+        <item>Best</item>
+        <item>Latest</item>
+    </string-array>
+
+    <string name="select_prompt">Select</string>
+</resources>

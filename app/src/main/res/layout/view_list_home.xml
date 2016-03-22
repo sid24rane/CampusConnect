@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/QsTitle"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Title" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/QsCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="dept" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/QsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:text="Description" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/answerSection"
+        android:layout_height="wrap_content">
+
+        <!-- Donot change the parent of QsID
+        It should be Linear Layout id: Top Layout-->
+
+        <TextView
+            android:id="@+id/QsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="qsid"
+            android:visibility="gone"
+            />
+
+        <!-- end -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Read More"
+            android:id="@+id/viewmore"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_ans"
+            android:visibility="gone">
+
+
+        <!-- Donot change the parent of AnsID
+        It should be Linear Layout id: layout_ans-->
+
+
+            <TextView
+                android:id="@+id/Ansid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ansid"
+                android:visibility="gone"
+             />
+
+        <!-- end -->
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/Answerer"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                 />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/Ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgdata"
+                android:layout_gravity="center"
+                android:visibility="visible"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout2">
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/upvoteblank"
+                    android:id="@+id/ans_upvote"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.125"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:onClick="ansUpvoteHandler"
+                />
+
+
+                <Button
+                android:id="@+id/ans_downvote"
+                android:onClick="ansDownvoteHandler"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/downvoteblank"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.125"
+                android:layout_marginLeft="10dp"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+                <Button
+                android:background="@color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_comment"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:text="Comment"
+                android:onClick="CommentHandler"/>
+
+                <Button
+                android:background="@color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/extra"
+                android:onClick="showMore"
+                />
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ans_id"
+                android:textSize="10dp"
+                android:visibility="gone"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ustatus"
+                    android:textSize="10dp"
+                    android:text="upvote"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dstatus"
+                    android:textSize="10dp"
+                    android:text="downvote"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

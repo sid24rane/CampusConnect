@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="STAFF SIGN UP!"
+                android:textColor="@color/blue"
+                android:id="@+id/headertext"
+                android:fontFamily="Futura"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:typeface="serif"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Enter Name"
+                    android:ems="10"
+                    android:id="@+id/regName"
+                    android:layout_marginTop="43dp"
+                    android:layout_below="@+id/headertext"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Enter Password"
+                    android:ems="10"
+                    android:id="@+id/regPassword"
+                    android:layout_below="@+id/regName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Re-Enter Password"
+                    android:ems="10"
+                    android:id="@+id/regAgainPassword"
+                    android:layout_below="@+id/regPassword"
+                    android:layout_alignParentRight="true"
+                    android:inputType="textPassword"
+                    android:layout_alignParentEnd="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/regEmail"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Email "
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/regAgainPassword"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Code"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/regCode"
+                    android:layout_below="@+id/regEmail"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/button_simple_border"
+                style="?android:buttonBarButtonStyle"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:typeface="serif"
+                android:id="@+id/signup"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

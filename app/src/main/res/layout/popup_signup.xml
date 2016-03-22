@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/popup"
+    android:layout_margin="20dp"
+    android:layout_gravity="top|center"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/PStud"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/student1"
+        android:background="@color/transparent"
+        android:layout_marginRight="10dp"
+
+        />
+    <ImageButton
+        android:id="@+id/PStaff"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/staff1"
+        android:background="@color/transparent"
+        android:layout_marginLeft="10dp"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:text="Student"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:text="Staff"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

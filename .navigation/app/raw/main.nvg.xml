@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Answer.AddAnswer.AddAnswer"/>
+      <point      
+        x = "4467"      
+        y = "162"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.UserProfile.Profile"/>
+      <point      
+        x = "5196"      
+        y = "1337"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Parse_Session.SessionChecker"/>
+      <point      
+        x = "3695"      
+        y = "2186"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.StaffRequest.StaffRequest"/>
+      <point      
+        x = "2152"      
+        y = "1654"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.ViewUpvotes.ViewUpvotes"/>
+      <point      
+        x = "-634"      
+        y = "2135"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Signup.Proceed"/>
+      <point      
+        x = "750"      
+        y = "3010"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Question.ReportQuestion.ReportedQuestion"/>
+      <point      
+        x = "800"      
+        y = "3060"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Question.ViewQuestion.ViewQuestion"/>
+      <point      
+        x = "850"      
+        y = "3110"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Answer.ReportAnswer.ReportedAns"/>
+      <point      
+        x = "900"      
+        y = "3160"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.ViewDiscussionRoom"/>
+      <point      
+        x = "950"      
+        y = "3210"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.VerifyStudent.StudentVerify"/>
+      <point      
+        x = "1000"      
+        y = "3260"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Answer.WriteAnswer.WriteAnswer"/>
+      <point      
+        x = "1050"      
+        y = "3310"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Home.Home"/>
+      <point      
+        x = "1100"      
+        y = "3360"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Signup.SignUpDetails"/>
+      <point      
+        x = "1150"      
+        y = "3410"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Question.AddQuestion.AddQuestion"/>
+      <point      
+        x = "4201"      
+        y = "1414"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Comment_Reply.ReportComment.ReportedComment"/>
+      <point      
+        x = "1250"      
+        y = "3510"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Signup.SignupStudent"/>
+      <point      
+        x = "1300"      
+        y = "3560"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.DiscussionMessage"/>
+      <point      
+        x = "1350"      
+        y = "3610"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.UserProfile.UserProfile"/>
+      <point      
+        x = "4372"      
+        y = "1834"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Question.QuestionDetail"/>
+      <point      
+        x = "1450"      
+        y = "3710"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.MainActivity"/>
+      <point      
+        x = "480"      
+        y = "77"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Notification.Notifications"/>
+      <point      
+        x = "1500"      
+        y = "3760"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.AskStaff.AskStaff"/>
+      <point      
+        x = "1550"      
+        y = "3810"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Answer.ViewAnswer.ViewAnswer"/>
+      <point      
+        x = "1600"      
+        y = "3860"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Answer.EditAnswer.EditAnswer"/>
+      <point      
+        x = "1650"      
+        y = "3910"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.EmailReverify.EmailReverify"/>
+      <point      
+        x = "1700"      
+        y = "3960"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Comment_Reply.ViewComment.CommentView"/>
+      <point      
+        x = "1750"      
+        y = "4010"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Question.EditQuestion.EditQuestion"/>
+      <point      
+        x = "1800"      
+        y = "4060"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.DiscussionRoom"/>
+      <point      
+        x = "1850"      
+        y = "4110"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.ForgotPassword.ForgotPassword"/>
+      <point      
+        x = "1900"      
+        y = "4160"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.AddDiscussionMember"/>
+      <point      
+        x = "1950"      
+        y = "4210"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Signup.SignUpAdmin"/>
+      <point      
+        x = "2409"      
+        y = "68"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.CreateDiscussion"/>
+      <point      
+        x = "2000"      
+        y = "4260"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.DiscussionRoom.DiscussionDetail"/>
+      <point      
+        x = "2050"      
+        y = "4310"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.Comment_Reply.AddComment.AddComment"/>
+      <point      
+        x = "2100"      
+        y = "4360"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.sid.campusconnect.ReportedUser.ReportedUsers"/>
+      <point      
+        x = "2150"      
+        y = "4410"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ProfilePic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/Department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="dept" />
+
+        <TextView
+            android:id="@+id/UserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="dept"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.3"
+                android:padding="12dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000000"
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/verify"
+                android:onClick="VerifyHandler"
+                />
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.3"
+                android:padding="12dp"
+                android:textColor="#000000"
+                style="?android:buttonBarButtonStyle"
+                android:onClick="InfoHandler"
+                android:id="@+id/info" />
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discard"
+                android:padding="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0."
+                android:textColor="#000000"
+                android:layout_marginRight="5dp"
+                style="?android:buttonBarButtonStyle"
+                android:onClick="DiscardHandler"
+                android:id="@+id/discard" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

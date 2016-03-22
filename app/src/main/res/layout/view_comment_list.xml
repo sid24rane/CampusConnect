@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="14dp"
+        android:textColor="@color/blue"
+        android:id="@+id/cmt_owner"
+        />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="comment"
+        android:textSize="15dp"
+        android:id="@+id/comment"
+        />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tagged"
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:id="@+id/cmttag" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/l1">
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upvote"
+            android:textColor="#000000"
+            android:id="@+id/cmt_upvote"
+            android:textSize="10dp"
+            android:onClick="cmtUpvoteHandler"/>
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply"
+            android:textColor="#000000"
+            android:id="@+id/cmt_reply"
+            android:textSize="10dp"
+            android:onClick="ReplyPopup"/>
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report"
+            android:textColor="#000000"
+            android:id="@+id/cmt_report"
+            android:textSize="10dp"
+            android:onClick="cmtReportHandler"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cmt_id"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

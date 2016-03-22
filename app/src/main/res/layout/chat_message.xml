@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textview"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/otherdp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#33c"
+            android:id="@+id/otherusername"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/otherdp"
+            android:layout_toEndOf="@+id/otherdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:id="@+id/othermessage"
+            android:layout_below="@+id/otherusername"
+            android:layout_toRightOf="@+id/otherdp"
+            android:layout_toEndOf="@+id/otherdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/otherlink"
+            android:layout_below="@+id/otherusername"
+            android:layout_toRightOf="@+id/otherdp"
+            android:layout_toEndOf="@+id/otherdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/othertime"
+            android:textSize="10dp"
+            android:layout_below="@+id/othermessage"
+            android:layout_toRightOf="@+id/otherdp"
+            android:layout_toEndOf="@+id/otherdp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/textview"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/mydp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33CC33"
+                android:id="@+id/myusername"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/mydp"
+                android:layout_toStartOf="@+id/mydp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/mymessage"
+                android:layout_below="@+id/myusername"
+                android:layout_toLeftOf="@+id/mydp"
+                android:layout_toStartOf="@+id/mydp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:id="@+id/mylink"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_below="@+id/myusername"
+                android:layout_toLeftOf="@+id/mydp"
+                android:layout_toStartOf="@+id/mydp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/mytime"
+                android:textSize="10dp"
+                android:layout_below="@+id/mymessage"
+                android:layout_toLeftOf="@+id/mydp"
+                android:layout_toStartOf="@+id/mydp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

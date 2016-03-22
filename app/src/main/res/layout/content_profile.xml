@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_profile"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            card_view:cardCornerRadius="1dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                tools:context="com.eugene.fithealth.TestingForSO">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sarthak Dadhakar"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pro_fullname"
+
+                    />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            card_view:cardCornerRadius="1dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                tools:context="com.eugene.fithealth.TestingForSO">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_email_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email@email.com"
+                    android:textSize="15sp"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/pro_email"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            card_view:cardCornerRadius="1dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                tools:context="com.eugene.fithealth.TestingForSO">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:id="@+id/pro_dept"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/pro_btn_dp"
+                android:layout_height="wrap_content"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:text="select"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+
+                android:background="@drawable/button_simple_border"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:id="@+id/pro_btn_done"
+                android:layout_height="wrap_content"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:textColor="#000000"
+                android:text="Done"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_simple_border"
+                />
+
+        </LinearLayout>
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:isIndicator="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Sessions"
+            android:id="@+id/btnsession"
+            android:onClick="SeeSessions"/>
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

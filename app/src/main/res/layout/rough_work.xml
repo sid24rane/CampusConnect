@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/q_u_name"
+            android:textColor="#000099"
+            android:text="Name"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="description"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:id="@+id/ans_description"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgdata"
+        android:onClick="showdata"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imgdata"
+        android:layout_marginTop="5dp"
+        android:id="@+id/layout2"
+        >
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upvote"
+            android:textColor="#000000"
+            android:id="@+id/ans_upvote"
+            android:textSize="10dp"
+            android:onClick="ansUpvoteHandler"/>
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:id="@+id/ans_downvote"
+
+            android:text="Downvote"
+            android:onClick="ansDownvoteHandler"
+            />
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_comment"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:text="Comment"
+            android:onClick="CommentHandler"/>
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/extra"
+            android:onClick="showMore"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ans_id"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>

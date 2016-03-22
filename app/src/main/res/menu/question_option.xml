@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Discuss"
+        android:id="@+id/discuss_menu"
+        />
+
+    <item
+        android:title="Ask Staff"
+        android:id="@+id/ask_staff_menu"
+        />
+
+    <item
+        android:title="Report Question"
+        android:id="@+id/report_qs_menu"
+        />
+
+    <item
+        android:title="Edit Question"
+        android:id="@+id/edit_qs_menu"
+        />
+
+    <item
+        android:title="View Answers"
+        android:id="@+id/view_ans_menu"
+        />
+
+</menu>

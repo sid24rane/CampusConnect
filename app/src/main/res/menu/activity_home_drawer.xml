@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Notifications"
+        android:id="@+id/nav_Notification"
+        />
+
+    <item android:title="Question">
+        <menu>
+            <item
+                android:id="@+id/nav_Viewqs"
+                android:icon="@drawable/view"
+                android:title="View Questions" />
+            <item
+                android:id="@+id/nav_addquestion"
+                android:icon="@drawable/add"
+                android:title="Add Question" />
+            <item
+                android:id="@+id/nav_Discussqs"
+                android:icon="@drawable/group"
+                android:title="Discussion Rooms" />
+            <item
+                android:id="@+id/nav_writeans"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Write Answer" />
+
+        </menu>
+    </item>
+
+    <item android:title="Staff">
+        <menu>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Verify Students" />
+        <item
+            android:id="@+id/nav_Reportqs"
+            android:icon="@drawable/report"
+            android:title="Reported Questions" />
+        <item
+            android:id="@+id/nav_Reportas"
+            android:icon="@drawable/report"
+            android:title="Reported Answers" />
+            <item
+                android:id="@+id/nav_Reportcmt"
+                android:icon="@drawable/report"
+                android:title="Reported Comments" />
+            <item
+                android:id="@+id/nav_Reportusr"
+                android:icon="@drawable/report"
+                android:title="Reported Users" />
+        <item
+            android:id="@+id/nav_staffRequest"
+            android:icon="@drawable/request"
+            android:title="Staff Requests " />
+
+        </menu>
+    </item>
+
+    <item android:title="You">
+        <menu>
+            <item
+                android:id="@+id/nav_pro"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

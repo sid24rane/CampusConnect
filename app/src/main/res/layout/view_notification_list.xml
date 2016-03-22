@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/n_layout"
+    android:onClick="go"
+    android:layout_margin="8dp">
+
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:id="@+id/n_name"
+        android:textSize="16dp"
+        android:textColor="@color/blue"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/n_name"
+        android:textSize="16dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/n_text" />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/n_data"
+        android:textSize="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/n_text"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/n_type"
+        android:visibility="gone"
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/n_id"
+        android:visibility="gone"
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/n_frreply"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>

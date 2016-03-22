@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ani mhane mi Ui developer -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/ReQsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="dept" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/ReQsCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="dept" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="Read Qs "
+                android:layout_weight="0.3"
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/ReReadMore"
+                android:layout_marginLeft="10dp"
+                android:onClick="ReReadFullQsHandler"
+                />
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:layout_weight="0.3"
+                style="?android:buttonBarButtonStyle"
+                android:gravity="center"
+                android:id="@+id/ReAcceptQs"
+                android:onClick="AcceptQsHandler"
+                />
+
+            <Button
+                android:background="@drawable/button_simple_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Remove"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                style="?android:buttonBarButtonStyle"
+                android:id="@+id/ReRejectQs"
+                android:onClick="RejectQsHandler"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ReQsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="dept"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

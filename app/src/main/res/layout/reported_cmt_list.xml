@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Answer"
+            android:textSize="15dp"
+            android:id="@+id/rep_c_ans"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commenter"
+            android:textSize="13dp"
+            android:id="@+id/rep_cmtr"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textSize="15dp"
+            android:id="@+id/rep_cmt"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/cmt_imgdata"
+        android:layout_centerHorizontal="true"
+        android:onClick="showdata"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/imgdata"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:id="@+id/rep_allow"
+            android:text="Allow"
+            android:onClick="rep_allowHandler"
+            />
+
+        <Button
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_discard"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:text="Discard"
+            android:onClick="rep_discardHandler"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_cuid"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rep_cid"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

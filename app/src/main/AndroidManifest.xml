@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sid.campusconnect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.sid.campusconnect.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.sid.campusconnect.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".Parse_Session.ParseInitialize"
+        android:allowBackup="true"
+        android:icon="@drawable/campuslogo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Campus Connect" />
+        <activity
+            android:name=".Parse_Session.SessionChecker"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup.SignupStudent"
+            android:label="Sign UP!"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ForgotPassword.ForgotPassword"
+            android:label="Forgot Password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EmailReverify.EmailReverify"
+            android:label="Resend Email Confirmation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Signup.SignUpAdmin"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Home.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Signup.Proceed"
+            android:label="@string/title_activity_proceed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VerifyStudent.StudentVerify"
+            android:label="@string/title_activity_student_verify" />
+        <activity
+            android:name=".UserProfile.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Home.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Signup.SignUpDetails" />
+        <activity
+            android:name=".Question.AddQuestion.AddQuestion"
+            android:label="@string/title_activity_add_question" />
+        <activity
+            android:name=".Question.ViewQuestion.ViewQuestion"
+            android:label="@string/title_activity_view_question" />
+        <activity
+            android:name=".UserProfile.UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:parentActivityName=".Home.Home" />
+        <activity
+            android:name=".Question.QuestionDetail"
+            android:label="@string/title_activity_question_detail" />
+        <activity
+            android:name=".ViewUpvotes.ViewUpvotes"
+            android:label="@string/title_activity_view_upvotes" />
+        <activity
+            android:name=".Question.ReportQuestion.ReportedQuestion"
+            android:label="@string/title_activity_reported_question" />
+        <activity
+            android:name=".Question.EditQuestion.EditQuestion"
+            android:label="@string/title_activity_edit_qs" />
+        <activity
+            android:name=".DiscussionRoom.CreateDiscussion"
+            android:label="@string/title_activity_create_discussion" />
+        <activity
+            android:name=".DiscussionRoom.AddDiscussionMember"
+            android:label="@string/title_activity_add_discussion_member" />
+        <activity
+            android:name=".DiscussionRoom.ViewDiscussionRoom"
+            android:label="@string/title_activity_view_discussion_room" />
+        <activity
+            android:name=".DiscussionRoom.DiscussionDetail"
+            android:label="@string/title_activity_discussion_detail" />
+        <activity android:name=".Answer.ReportAnswer.ReportedAns" />
+        <activity android:name=".Answer.ViewAnswer.ViewAnswer" />
+        <activity android:name=".Comment_Reply.AddComment.AddComment" />
+        <activity android:name=".Answer.AddAnswer.AddAnswer" />
+        <activity
+            android:name=".AskStaff.AskStaff"
+            android:label="Available Staff"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".StaffRequest.StaffRequest" />
+        <activity android:name=".Comment_Reply.ViewComment.CommentView" />
+        <activity android:name=".Notification.Notifications" />
+        <activity android:name=".Comment_Reply.ReportComment.ReportedComment" />
+        <activity android:name=".ReportedUser.ReportedUsers" />
+        <activity
+            android:name=".DiscussionRoom.DiscussionRoom"
+            android:label="Discussion Room"
+            android:theme="@android:style/Theme.Holo.Light"></activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".Notification.CustomNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.sid.campusconnect" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Answer.WriteAnswer.WriteAnswer"
+            android:label="@string/title_activity_write_answer"></activity>
+        <activity android:name=".Answer.EditAnswer.EditAnswer"></activity>
+    </application>
+
+</manifest>

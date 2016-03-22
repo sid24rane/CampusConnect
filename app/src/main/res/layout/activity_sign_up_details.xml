@@ -1,0 +1,191 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/edt_Fname"
+                        android:hint="First Name"
+                        android:layout_margin="10dp"
+                        android:inputType="textPersonName"
+                        android:textSize="13dp"
+
+                        />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/edt_Lname"
+                        android:hint="Last Name"
+                        android:inputType="textPersonName"
+                        android:textSize="13dp"
+                        />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/dob"
+                        android:layout_weight="0.2"
+                        android:text="DOB"
+
+                        />
+                    <Button
+                        android:id="@+id/sign_btn_dob"
+                        android:background="@drawable/button_simple_border"
+                        style="?android:buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Select"
+                        android:textColor="#000000"
+                        android:layout_weight="0.5"
+                        android:textSize="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Department"
+                        android:layout_height="35dp"
+                        android:id="@+id/sign_dept"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.2"
+                        android:entries="@array/dept_array"
+                        android:prompt="@string/dept_prompt"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="Gender"
+                        android:layout_height="35dp"
+                        android:id="@+id/sign_gender"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:entries="@array/gender_array"
+                        android:text="@string/gender_prompt"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Profile Picture :"
+                        android:id="@+id/sign_dp"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/button_simple_border"
+                        style="?android:buttonBarButtonStyle"
+                        android:textColor="#000000"
+                        android:layout_height="40dp"
+                        android:text="Select"
+                        android:textSize="10dp"
+                        android:id="@+id/sign_btn_dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/sign_ifdp"
+                        android:layout_height="35dp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/sign_btn_dp"
+                        android:text="No Dp Selected"
+                        android:layout_alignTop="@+id/sign_dp"/>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Next"
+                    android:background="@drawable/button_simple_border"
+                    style="?android:buttonBarButtonStyle"
+                    android:textColor="#000000"
+                    android:layout_gravity="right"
+                    android:id="@+id/sign_next"
+                    android:layout_marginBottom ="20dp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

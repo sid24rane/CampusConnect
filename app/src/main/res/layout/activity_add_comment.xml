@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            tools:context="com.example.sid.campusconnect.Comment_Reply.AddComment.AddComment">
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/a_name"
+                android:text="Sarthak Dadhakar: "
+                android:layout_marginTop="5dp"
+                android:textColor="#000099"
+                android:textSize="15dp"
+                />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ans"
+                android:text="Answer to be displayed "
+                android:layout_marginTop="10dp"
+                android:textColor="#000099"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/edt_Comment"
+                android:textColorHighlight="#7cff88"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="4"
+                android:textStyle="normal"
+                android:singleLine="false"
+                android:hint="Write your Comment"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <AutoCompleteTextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"
+                    android:id="@+id/Tag"
+                    android:inputType="textAutoComplete|textPersonName"
+                    android:hint="Select the Friend to tag......"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_rem"
+                    android:text="Remove"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to upload"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/DataImage"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dataresult"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="13dp"
+                    android:text="No Data Uploaded!"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Comment"
+                android:layout_marginTop="5dp"
+                android:id="@+id/add_comment"
+                android:textAllCaps="true"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
