@@ -1,10 +1,11 @@
-# CampusConnect -Q/A platform for connecting students with teachers
+# CampusConnect -Q/A platform for connecting Students with Teachers
 
--Add/view/Edit/Delete Qs,Ans
+# Features
+-Add/view/Edit/Delete Questions,Answers
 
--Upvote/Downvote/Comment,Reply Qs,Ans
+-Upvote/Downvote/Comment,Reply Questions,Answers
 
--Report Qs,Ans,Student
+-Report inappropriate Questions,Answers,Students
 
 -Realtime Push Notifications Using GCM
 
@@ -12,8 +13,29 @@
 
 -Verfication of Student/Teacher
 
-**Tech :** 
+# Screenshots
+
+# Tech 
 
 Java(Android),
 Node.js,
 MongoDB
+Material Design,
+Parse-Server
+
+# Development
+
+Want to contribute? Great!
+Just fork the project
+Work on it and submit a pull request!
+
+Feel free to Hack !!
+
+# License!
+MIT
+
+# Authors
+
+* **Siddhesh Rane** - *Initial work*
+* **Sarthak Dadhakar** - *Initial work* 
+* **Rohan Patil** - *Initial work*
